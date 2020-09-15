@@ -1,5 +1,5 @@
 <launch>
     <!-- My Package launch file -->
-    <node pkg="topics_quiz" type="my_script.py" name="quiz"  output="screen">
+    <node pkg="topics_quiz" type="my_script.py" name="topics_quiz_node"  output="screen">
     </node>
 </launch>

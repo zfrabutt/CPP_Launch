@@ -17,11 +17,11 @@ def callback(msg):
     cmd_vel.linear.x = 0
 
     if (left > right):
-        cmd_vel.angular.z = -.2
+        cmd_vel.angular.z = -.25
         time.sleep(.1)
         cmd_vel.angular.z = 0
     else:
-        cmd_vel.angular.z = .2
+        cmd_vel.angular.z = .25
         time.sleep(.1)
         cmd_vel.angular.z = 0
 
@@ -40,7 +40,7 @@ rospy.init_node('topics_quiz_node')
 rate = rospy.Rate(10)
 
 
-
 while not rospy.is_shutdown(): 
   pub.publish(cmd_vel)
   rate.sleep()
+  
