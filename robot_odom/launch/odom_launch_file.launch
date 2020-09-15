@@ -1,0 +1,5 @@
+<launch>
+    <!-- My Package launch file -->
+    <node pkg="robot_odom" type="odomreading.py" name="odomRead"  output="screen">
+    </node>
+</launch>
