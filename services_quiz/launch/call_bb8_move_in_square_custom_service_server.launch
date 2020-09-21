@@ -1,0 +1,9 @@
+<launch>
+
+  <node pkg ="services_quiz"
+        type="service_client.py"
+        name="quiz_square_client"
+        output="screen">
+  </node>
+
+</launch>
